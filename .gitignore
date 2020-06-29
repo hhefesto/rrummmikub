@@ -1,0 +1,11 @@
+.envrc
+TAGS
+.stack-work/
+dist-newstyle/
+dist/
+.ghc.environment.*
+cabal.project.local
+*~
+.dir-locals.el
+.#*
+libgc.so

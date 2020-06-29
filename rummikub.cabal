@@ -1,0 +1,35 @@
+name:                rrumikub
+version:             0.1.0.0
+synopsis:            Rendon's Rumikub
+description:         Multiplayer Rumikub in Haskell, Nix and maybe others.
+homepage:            https://github.com/hhefesto/rrumikub#readme
+license:             Apache-2.0
+license-file:        LICENSE
+author:              Daniel Herrera Rendón
+maintainer:          hhefesto@rdataa.com
+copyright:           2020 Daniel Herrera
+category:            Language
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Rummikub
+  build-depends:       base
+                     , servant
+  -- uncomment this line to get a cabal repl. Use appropiate complete path.
+  default-language:    Haskell2010
+  ghc-options:         -ddump-to-file -ddump-splices
+
+executable rrumikub-exe
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  ghc-options:         -O2 -threaded -Wall
+  build-depends:       base
+                     , rrumikub
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/hhefesto/rrumikub
