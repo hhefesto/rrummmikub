@@ -2,7 +2,7 @@
 let
   hsPkgs = import ./default.nix {};
 in
-  hsPkgs.my-package.components.all
+  hsPkgs.rummikub.components.all
 
 # # shell.nix
 # let
